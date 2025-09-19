@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="signup-container">
+    <h2>Create Account</h2>
+    <form id="signupForm">
+        <!-- Full Name -->
+        <input type="text" id="fullname" placeholder="Enter Full Name" required pattern="^[A-Za-z]+ [A-Za-z]+$" title="Please enter your full name">
+
+        <!-- Email -->
+        <input type="email" id="email" placeholder="Enter Email" required>
+
+        <!-- Mobile Number -->
+        <div class="mobile-field">
+            <span class="prefix">+91</span>
+            <input type="tel" id="mobile"
+                    placeholder="Enter your Mobile Number" required pattern="^[6-9][0-9]{9}$" title="Enter a valid mobile number">
+        </div>
+
+        <!-- Password -->
+        <input type="password" id="password" placeholder="Enter Password" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d]).{8,}$" title="Password must be at least 8 characters long, include uppercase, lowercase, a number, and a special character.">
+
+        <!-- Confirm Password -->
+        <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+
+        <!-- Signup Button -->
+        <button type="submit">Signup</button>
+        <p id="signupMessage" class="message"></p>
+    </form>
+    <p>Already have an account? <a href="Login.html">Login</a></p>
+</div>
+
+<script src="script/script.js"></script>
+</body>
+
