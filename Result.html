@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Analysis Results</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="results-container">
+    <h2>📊 Resume Analysis Results</h2>
+
+    <!-- Company + Job Info -->
+    <p><strong>Company:</strong> <span id="companyName"></span></p>
+    <p><strong>Job Link:</strong> <a id="jobLink" href="#" target="_blank"></a></p>
+
+    <!-- Analysis Results -->
+    <div class="analysis-box">
+        <p><strong>Match Score:</strong> <span id="score"></span>%</p>
+        <p><strong>Missing Skills:</strong> <span id="missingSkills"></span></p>
+        <p><strong>Suggestions:</strong></p>
+        <p id="suggestions"></p>
+        <p><strong>Conclusion:</strong></p>
+        <p id="conclusion"></p>
+    </div>
+
+    <!-- Navigation -->
+    <div class="result-actions">
+        <button onclick="window.location.href='dashboard.html'">Analyze Another Resume or for Another Job Discription.</button>
+    </div>
+</div>
+</body>
+</html>
+

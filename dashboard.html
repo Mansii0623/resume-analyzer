@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="dashboard-container">
+    <!-- Dynamic Welcome -->
+    <h2 id="welcomeUser">Welcome!</h2>
+    <p class="subtitle">Submit your resume for analysis</p>
+
+    <!-- Resume Analyzer Form -->
+    <form id="resumeForm" class="resume-form">
+        <!-- Upload Resume -->
+        <label for="resume">Upload Resume (PDF/DOCX only)</label>
+        <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+
+        <!-- Job Description -->
+        <label for="jobDescription">Job Description</label>
+        <textarea id="jobDescription" rows="5" maxlength="1000" placeholder="Enter the job description here..." required></textarea>
+        <small id="charCount">0 / 1000</small>
+
+        <!-- Company Name -->
+        <label for="companyName">Company Name</label>
+        <input type="text" id="companyName" placeholder="Enter company name" required>
+
+        <!-- Job Link -->
+        <label for="jobLink">Job Posting Link</label>
+        <input type="url" id="jobLink" placeholder="Enter job link (optional)">
+
+        <!-- Submit -->
+        <button type="submit">Submit for Analysis</button>
+    </form>
+    <p id="dashboardMessage" class="message"></p>
+
+    <!-- Resume History -->
+    <div class="history-section">
+        <h3>📂 Your Resume Analysis History</h3>
+        <ul id="historyList">
+            <li>No previous submissions.</li>
+        </ul>
+    </div>
+</div>
+
+<script src="script/script.js"></script>
+</body>
+</html>
+
